@@ -19,7 +19,7 @@ class tourController {
       if (listAlltour === null) {
         res.send(responseBadRequest("Chua co du lieu"));
       }
-      res.send(responseSuccess("List all tour"));
+      res.send(responseSuccess(listAlltour));
     } catch (err) {
       throw err;
     }
